@@ -16,29 +16,67 @@
 <body>
     <!-- content -->
     <div class="body-overlay">
-        
     </div>
-    <div id="content">
-        <div class="container">            
-            <div class="row">
+    <div class="loader" style="display:block">
+        <img src="./assets/images/loader.gif" alt="loader not available">
+    </div>
+    <div id="content" style="display:none">
+        <div class="mobile-nav-button">
+            <div class="mobile mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mobile mobile-menu-cross" style="display:none">
+                <i class="far fa-times-circle"></i>
+            </div>
+        </div>
+        <div class="container">
+            <!-- nav bar  -->
+            <div class="row" id="landing-page">
                 <div class="col-sm-12">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link" id="about-link" href="#">About</a>
+                            <a class="nav-link mobile-nav-item nav-about-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="skill-link" href="#">Skills</a>
+                            <a class="nav-link mobile-nav-item nav-skill-link" href="#">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="experience-link" href="#">Experience</a>
+                            <a class="nav-link mobile-nav-item nav-experience-link" href="#">Experience</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="education-link" href="#">Education</a>
+                            <a class="nav-link mobile-nav-item nav-education-link" href="#">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="contact-link" href="#">Contact</a>
+                            <a class="nav-link mobile-nav-item nav-contact-link" href="#">Contact</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link mobile-nav-item" href="./assets/A_Raj_Resume.pdf" download="Abhishek_Raj.pdf">
+                                Get Resume
+                                <i class="fas fa-download">
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="mobile-nav">
+                        <li class="mobile-nav-item">
+                            <a class="nav-link nav-about-link" href="#">About</a>
+                        </li>
+                        <li class="mobile-nav-item">
+                            <a class="nav-link nav-skill-link" href="#">Skills</a>
+                        </li>
+                        <li class="mobile-nav-item">
+                            <a class="nav-link nav-experience-link" href="#">Experience</a>
+                        </li>
+                        <li class="mobile-nav-item">
+                            <a class="nav-link nav-education-link" href="#">Education</a>
+                        </li>
+                        <li class="mobile-nav-item">
+                            <a class="nav-link nav-contact-link" href="#">Contact</a>
+                        </li>
+                        <li class="mobile-nav-item">
                             <a class="nav-link" href="./assets/A_Raj_Resume.pdf" download="Abhishek_Raj">
                                 Get Resume
                                 <i class="fas fa-download">
@@ -47,12 +85,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-7">
                     <div id="my-pic">
-                        <img src="./assets/images/bhoot.png" alt="A Raj image not visible">
+                        <img src="./assets/images/3.png" alt="A Raj image not visible">
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-5">
                     <div class="my-intro">
                         <h3>Hello</h3>
                         <h2>I'm Abhishek Raj</h2>
@@ -63,22 +101,23 @@
             </div>
 
             <!-- about abhishek raj -->
-            <div class="other-data-details" id="about-details">
+            <div class="other-data-details screen-1" id="about-details">
                 <div class="row">
                     <div class="col-sm-12">
                         <div id="other-details">
                             <div class="overlay"></div>
-                            <div class="aboutme">
+                            <div class="mydetails">
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="cross">
-                                            <i class="far fa-times-circle"></i>
+                                            <i style="color: cyan" class="far fa-times-circle"></i>
                                         </div>
                                         <h4>About Me</h4>
                                     </div>
                                     <div class="left-section col-sm-5">
-                                        <img src="./assets/images/itsme.jpg" alt="my pic" class="my-pic-about">
-                                        <!-- <p>this is image part</p> -->
+                                        <div class="col aboutme-my-pic">
+                                            <img src="./assets/images/itsme.jpg" alt="my pic" class="my-pic-about">
+                                        </div>
                                     </div>
                                     <div class="right-section col-sm-7">
                                         <h5>Hi, i'm
@@ -111,13 +150,10 @@
                                         </table>
                                     </div>
                                     <div class="col-sm-12">
-                                        <p class="about-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet sem
-                                            sit amet dolor luctus pellentesque. Pellentesque eleifend tellus at interdum
-                                            elementum. Nam egestas molestie elit. Vivamus sed accumsan quam, a mollis magna.
-                                            Nam aliquet eros eget sapien consequat tincidunt at vel nibh sed accumsan quam.</p>
-                                        <p class="about-para">Aliquam aliquet sapien quis mauris semper suscipit. Maecenas pharetra dapibus posuere.
-                                            Praesent odio sem, varius quis dolor vel, maximus dapibus mi. Pellentesque mattis
-                                            mauris neque. Nam aliquam turpis ante, at cursus massa ullamcorper ut</p>
+                                        <p class="about-para">I am someone who is mature and candid. Everyday I work to improve myself and my skills
+                                            which is part of maturing and becoming better at what I do.
+                                        </p>
+                                        <p class="about-para">I am passionate about new technologies, new ideas and new ways of thinking.</p>
                                     </div>
                                 </div>
                             </div>
@@ -127,16 +163,16 @@
             </div>
 
             <!-- skills -->
-            <div class="other-data-details" id="skills-details">
+            <div class="other-data-details screen-2" id="skills-details">
                 <div class="row">
                     <div class="col-sm-12">
                         <div id="other-details">
                             <div class="overlay"></div>
-                            <div class="aboutme">
+                            <div class="mydetails">
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="cross">
-                                            <i class="far fa-times-circle"></i>
+                                            <i style="color: #d42467" class="far fa-times-circle"></i>
                                         </div>
                                         <h4>Technical Skills</h4>
                                     </div>
@@ -152,7 +188,7 @@
                                                 </span>
                                             </p>
                                             <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 60%">
+                                                <div class="skill-section mean-stack progress-bar-striped active">
                                                 </div>
                                             </div>
                                         </div>
@@ -167,7 +203,7 @@
                                                 </span>
                                             </p>
                                             <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 70%">
+                                                <div class="skill-section angular progress-bar-striped active">
                                                 </div>
                                             </div>
 
@@ -183,7 +219,7 @@
                                                 </span>
                                             </p>
                                             <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 50%">
+                                                <div class="skill-section react progress-bar-striped active">
                                                 </div>
                                             </div>
 
@@ -199,7 +235,7 @@
                                                 </span>
                                             </p>
                                             <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 60%">
+                                                <div class="skill-section vue-js progress-bar-striped active">
                                                 </div>
                                             </div>
 
@@ -215,7 +251,7 @@
                                                 </span>
                                             </p>
                                             <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 70%">
+                                                <div class="skill-section c-sharp progress-bar-striped active">
                                                 </div>
                                             </div>
                                         </div>
@@ -230,12 +266,12 @@
                                                 </span>
                                             </p>
                                             <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 70%">
+                                                <div class="skill-section dot-net progress-bar-striped active">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="right-section col-sm-4 offset-sm-2">
+                                    <div class="right-section col-sm-4 offset-sm-2 skill-second-half">
                                         <!-- js -->
                                         <div class="skill-details">
                                             <p class="clearfix">
@@ -247,7 +283,7 @@
                                                 </span>
                                             </p>
                                             <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 80%">
+                                                <div class="skill-section javascript progress-bar-striped active">
                                                 </div>
                                             </div>
 
@@ -263,7 +299,7 @@
                                                 </span>
                                             </p>
                                             <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 70%">
+                                                <div class="skill-section html progress-bar-striped active">
                                                 </div>
                                             </div>
 
@@ -279,7 +315,7 @@
                                                 </span>
                                             </p>
                                             <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 85%">
+                                                <div class="skill-section css progress-bar-striped active">
                                                 </div>
                                             </div>
                                         </div>
@@ -294,7 +330,7 @@
                                                 </span>
                                             </p>
                                             <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 70%">
+                                                <div class="skill-section jquery progress-bar-striped active">
                                                 </div>
                                             </div>
                                         </div>
@@ -309,7 +345,7 @@
                                                 </span>
                                             </p>
                                             <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 60%">
+                                                <div class="skill-section database progress-bar-striped active">
                                                 </div>
                                             </div>
                                         </div>
@@ -324,7 +360,7 @@
                                                 </span>
                                             </p>
                                             <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 60%">
+                                                <div class="skill-section git progress-bar-striped active">
                                                 </div>
                                             </div>
                                         </div>
@@ -337,181 +373,39 @@
             </div>
 
             <!-- Experiment -->
-            <div class="other-data-details" id="experience-details">
+            <div class="other-data-details screen-3" id="experience-details">
                 <div class="row">
                     <div class="col-sm-12">
                         <div id="other-details">
                             <div class="overlay"></div>
-                            <div class="aboutme">
+                            <div class="mydetails">
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="cross">
-                                            <i class="far fa-times-circle"></i>
+                                            <i style="color: darkgoldenrod" class="far fa-times-circle"></i>
                                         </div>
-                                        <h4>Technical Skills</h4>
+                                        <h4>Experience</h4>
                                     </div>
-                                    <div class="right-section col-sm-4 offset-sm-1">
-                                        <!-- js -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    Web Design
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    80%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 80%">
-                                                </div>
+                                    <div class="eduexp offset-sm-2 col-sm-8">
+                                        <!-- nagarro  -->
+                                        <div class="experience-details">
+                                            <div class="exp-left-section left">
+                                                <h2 class="working-year">Jan 2018 - till now</h2>
                                             </div>
-
+                                            <div class="exp-right-section right" style="border:1px solid white;">
+                                                <h4>Nagarro Software Private Limited</h4>
+                                                <p>as Junior Associate, Technology</p>
+                                            </div>
                                         </div>
-                                        <!-- mean -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    Angular
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    70%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 70%">
-                                                </div>
+                                        <!-- nagarro  -->
+                                        <div class="experience-details">
+                                            <div class="exp-left-section left">
+                                                <h2 class="working-year">Jan 2014 - May 2015</h2>
                                             </div>
-
-                                        </div>
-                                        <!-- js -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    Database
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    80%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 80%">
-                                                </div>
+                                            <div class="exp-right-section right" style="border:1px solid white;">
+                                                <h4>Aptara International Private Limited</h4>
+                                                <p>as XML Programmer</p>
                                             </div>
-
-                                        </div>
-                                        <!-- js -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    C#
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    60%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 60%">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- js -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    Javascript
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    80%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 80%">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="right-section col-sm-4 offset-sm-2">
-                                        <!-- js -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    MEAN Stack
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    80%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 80%">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- angular -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    Javascript
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    70%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 70%">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- mean -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    Dot Net
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    60%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 60%">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- js -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    Git
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    70%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 70%">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- js -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    Javascript
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    80%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 80%">
-                                                </div>
-                                            </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -522,25 +416,24 @@
             </div>
 
             <!-- Education -->
-            <div class="other-data-details" id="education-details">
+            <div class="other-data-details screen-4" id="education-details">
                 <div class="row">
                     <div class="col-sm-12">
                         <div id="other-details">
                             <div class="overlay"></div>
-                            <div class="aboutme">
+                            <div class="mydetails">
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="cross">
-                                            <i class="far fa-times-circle"></i>
+                                            <i style="color: darkgoldenrod" class="far fa-times-circle"></i>
                                         </div>
                                         <h4>My Qualifications</h4>
                                     </div>
-                                    <div class="offset-sm-2 col-sm-8">
+                                    <div class="eduexp offset-sm-2 col-sm-8">
                                         <!-- mca -->
                                         <div class="education-details">
                                             <div class="edu-left-section left">
                                                 <h2 class="edu-year">2018</h2>
-
                                             </div>
                                             <div class="edu-right-section right" style="border:1px solid white;">
                                                 <h4>MCA (Master of Computre Application)</h4>
@@ -590,177 +483,48 @@
             </div>
 
             <!-- Contact -->
-            <div class="other-data-details" id="contact-details">
+            <div class="other-data-details screen-5" id="contact-details">
                 <div class="row">
                     <div class="col-sm-12">
                         <div id="other-details">
                             <div class="overlay"></div>
-                            <div class="aboutme">
+                            <div class="mydetails">
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="cross">
                                             <i class="far fa-times-circle"></i>
                                         </div>
-                                        <h4>Technical Skills</h4>
+                                        <h4>Contact</h4>
                                     </div>
-                                    <div class="right-section col-sm-4 offset-sm-1">
-                                        <!-- js -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    Web Design
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    80%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 80%">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- mean -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    Angular
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    70%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 70%">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- js -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    Database
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    80%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 80%">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- js -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    C#
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    60%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 60%">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!-- js -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    Javascript
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    80%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 80%">
-                                                </div>
-                                            </div>
+                                    <div class="left-section col-sm-6">
+                                        <div class="map-address">
+                                            <iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&height=600&hl=en&coord=28.541929,77.254204&q=Kalkaji%2C%20Delhi%2C%20India+(a)&ie=UTF8&t=&z=10&iwloc=B&output=embed"
+                                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                                <a href="https://www.mapsdirections.info/en/custom-google-maps/">Add Google Map to website</a> by
+                                                <a href="https://www.mapsdirections.info/en/">Measure area on map</a>
+                                            </iframe>
                                         </div>
                                     </div>
-                                    <div class="right-section col-sm-4 offset-sm-2">
-                                        <!-- js -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    MEAN Stack
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    80%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 80%">
-                                                </div>
+                                    <div class="right-section col-sm-6">
+                                        <form class="contact-form" action="#">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="contact-name">
+                                                <label class="label" id="contact-name-label" for="">Name:</label>
                                             </div>
-                                        </div>
-                                        <!-- angular -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    Javascript
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    70%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 70%">
-                                                </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" id="contact-email">
+                                                <label class="label" for="email" id="contact-email-label">Email:</label>
                                             </div>
-
-                                        </div>
-                                        <!-- mean -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    Dot Net
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    60%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 60%">
-                                                </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="contact-subject">
+                                                <label class="label" for="email" id="contact-subject-label">Subject:</label>
                                             </div>
-                                        </div>
-                                        <!-- js -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    Git
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    70%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 70%">
-                                                </div>
+                                            <div class="form-group">
+                                                <textarea class="form-control rounded-0" rows="6" id="contact-message"></textarea>
+                                                <label class="label" for="email" id="contact-message-label">Message:</label>
                                             </div>
-                                        </div>
-                                        <!-- js -->
-                                        <div class="skill-details">
-                                            <p class="clearfix">
-                                                <span class="left inline skill-name">
-                                                    Javascript
-                                                </span>
-                                                <span class="right inline skill-percentage">
-                                                    80%
-                                                </span>
-                                            </p>
-                                            <div class="bg">
-                                                <div class="skill-section progress-bar-striped active" style="width: 80%">
-                                                </div>
-                                            </div>
-                                        </div>
+                                            <button type="submit" class="btn btn-default">Submit</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -768,9 +532,6 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
     </div>
 </body>
