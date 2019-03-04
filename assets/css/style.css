@@ -56,11 +56,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100vh;
-<<<<<<< HEAD
     left: 47%;
-=======
-    left: 49%;
->>>>>>> 0dd7be06ef28c715d0e6161ef05b3a2256faf944
 }
 
 .loader img {
