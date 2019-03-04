@@ -24,11 +24,13 @@
     background: gray;
 }
 
-body { 
-    /* #166896 */
-    overflow-x: hidden;
-    background: #0a4e78;    
-    position: relative;
+body {    
+    overflow-x: hidden;    
+    /* background: #2b3c59; */
+    background: #3a5077;
+    position: relative;    
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .left {
@@ -54,7 +56,11 @@ body {
     position: absolute;
     width: 100%;
     height: 100vh;
+<<<<<<< HEAD
+    left: 47%;
+=======
     left: 49%;
+>>>>>>> 0dd7be06ef28c715d0e6161ef05b3a2256faf944
 }
 
 .loader img {
@@ -62,9 +68,7 @@ body {
     width: 100px;
 }
 
-#content {
-    background: #0a4e78;
-}
+
 
 .body-overlay {
     display: none;
@@ -109,7 +113,7 @@ body {
     display: inline-block;
     background: white;
     position: absolute;
-    right: 33px;
+    right: 2%;
     top: 4px;
     border-radius: 5px;
     cursor: pointer;
@@ -151,12 +155,13 @@ body {
 
 #my-pic img {
     height: 91.5vh;
-    min-width: 70%;
+    width: 95%;
 }
 
 .my-intro {
     margin: 10em 0;
-    padding: 4em 4em;
+    padding: 4em 0;
+    padding-left: 10em;
 }
 
 .my-intro h3 {
@@ -185,13 +190,12 @@ body {
 
 .my-intro h2 {
     color: white;
-    font-family: Gabriola;
+    font-family: 'Charm', cursive;
     font-size: 40px;
-    margin: 0;
 }
 
 .my-intro p {
-    font-size: 15px;
+    font-size: 18px;
     color: white;
     font-family: Adobe Ming Std L;
 }
@@ -277,17 +281,18 @@ table.about-details tr td {
 
 table.about-details tr td:first-child {
     padding-right: 25px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 table.about-details tr td:last-child {
     padding-right: 22px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 p.about-para {
     text-align: justify;
     color: white;
+    font-family: 'Nanum Myeongjo', serif;
     padding: 0 40px;
     font-size: 24px;
 }
@@ -470,72 +475,63 @@ p.about-para {
 
 @media screen and (max-width: 992px) {
     .my-intro {
-        margin: 10em 0;
-        padding: 0em 1em;
+        padding: 0em 0;
+        padding-left: 5em;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .eduexp {
-        margin-left: 5%;
-    }
-    .nav-item {
-        margin-right: 0px;
-    }
-    .nav-link {
-        font-size: 22px;
-    }
-    .my-pic-about:hover {
-        border: 1px solid gray;
-        transition: 0.8s;
-        transform: scale(1.05);
-        border-radius: 3px;
-    }
-    table.about-details {
-        margin-top: 15px;
-        margin-bottom: 40px;
-    }
-    .col-sm-8 {
-        flex: 0 0 90%;
-        max-width: 90%;
-    }
-    .exp-right-section h4 {
-        font-size: 28px;
-    }
-    .edu-right-section h4 {
-        font-size: 26px;
-    }
-    .edu-year {
-        /* transform: rotate(-20deg) translateY(36px); */
-        font-size: 26px;
-    }
-}
-@media screen and (max-width: 640px){
     .nav-item {
         display: none;
     }
+
     .mobile-nav {
         width: 94%;
         position: absolute;
         z-index: 1;
         background: rgba(0, 0, 0, 0.7);
     }
+
     #landing-page .col-sm-12 {
         position: relative;
     }
+
     .mobile-nav-button {
         display: block;
     }
+
     .nav-link {
         font-size: 20px;
     }
+
     .nav-link:hover {
         color: wheat;
     }
 
+    .container {
+        min-width: 1px;
+    }
 
+    .my-intro {
+        padding: 0em 1em;
+        margin: 66px 0 0;
+    }
 
-    /*  */
+    .my-intro h2 {
+        font-size: 30px;
+    }
+
+    .eduexp {
+        margin-left: 5%;
+    }
+
+    .nav-item {
+        margin-right: 0px;
+    }
+
+    .nav-link {
+        font-size: 22px;
+    }
 
     .my-pic-about:hover {
         border: 1px solid gray;
@@ -543,64 +539,113 @@ p.about-para {
         transform: scale(1.05);
         border-radius: 3px;
     }
+
+    table.about-details {
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+
+    .col-sm-8 {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+
+    .exp-right-section h4 {
+        font-size: 28px;
+    }
+
+    .edu-right-section h4 {
+        font-size: 26px;
+    }
+
+    .edu-year {
+        /* transform: rotate(-20deg) translateY(36px); */
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .my-pic-about:hover {
+        border: 1px solid gray;
+        transition: 0.8s;
+        transform: scale(1.05);
+        border-radius: 3px;
+    }
+
     .col-sm-5 {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
     .col-sm-7 {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
     .mydetails .right-section {
         margin-top: 0px;
     }
+
     .right-section h5 {
         text-align: center;
     }
+
     .right-section .role {
         text-align: center;
         font-size: 18px;
     }
+
     table.about-details {
         width: 80%;
         margin: auto;
         margin-bottom: 40px;
     }
+
     table.about-details tr {
         box-shadow: 0px 0px 10px aquamarine;
     }
+
     table.about-details tr td {
         border: 1px solid;
     }
+
     /* skills page */
     .offset-sm-1 {
         margin-left: 5%;
     }
+
     .skill-second-half {
         margin-left: 5%;
     }
+
     .col-sm-4 {
         flex: 0 0 90%;
         max-width: 90%;
     }
+
     .col-sm-6 {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
     .mydetails .left-section {
         margin: 35px 0;
     }
+
     .map-address {
         width: 90%;
         margin: auto;
     }
+
     .contact-form {
         width: 90%;
         margin: auto;
     }
+
     #my-pic {
         text-align: center;
     }
+
     .my-intro {
         margin: 3em 0;
         text-align: center;
@@ -615,29 +660,36 @@ p.about-para {
         position: absolute;
         width: 100%;
         height: 100vh;
-        left: 43%;        
+        left: 43%;
     }
+
     .nav-item {
         display: none;
     }
+
     .mobile-nav {
         width: 94%;
         position: absolute;
         z-index: 1;
         background: rgba(0, 0, 0, 0.7);
     }
+
     #landing-page .col-sm-12 {
         position: relative;
     }
+
     .mobile-nav-button {
         display: block;
     }
+
     .nav-link {
         font-size: 20px;
     }
+
     .nav-link:hover {
         color: wheat;
     }
+
     /* about us page */
     .my-pic-about:hover {
         border: 1px solid gray;
@@ -645,64 +697,81 @@ p.about-para {
         transform: scale(1.05);
         border-radius: 3px;
     }
+
     .col-sm-5 {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
     .col-sm-7 {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
     .mydetails .right-section {
         margin-top: 0px;
     }
+
     .right-section h5 {
         text-align: center;
     }
+
     .right-section .role {
         text-align: center;
         font-size: 18px;
     }
+
     table.about-details {
-        width: 80%;
+        width: 95%;
         margin: auto;
         margin-bottom: 40px;
     }
+
     table.about-details tr {
         box-shadow: 0px 0px 10px aquamarine;
     }
+
     table.about-details tr td {
         border: 1px solid;
     }
+
     /* skills page */
     .offset-sm-1 {
         margin-left: 5%;
     }
+
     .skill-second-half {
         margin-left: 5%;
     }
+
     .col-sm-4 {
         flex: 0 0 90%;
         max-width: 90%;
     }
+
     .col-sm-6 {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
     .mydetails .left-section {
         margin: 35px 0;
     }
+
     .map-address {
         width: 90%;
         margin: auto;
     }
+
     .contact-form {
         width: 90%;
         margin: auto;
     }
+
     #my-pic {
         text-align: center;
     }
+
     .my-intro {
         margin: 3em 0;
         text-align: center;
@@ -710,160 +779,202 @@ p.about-para {
 }
 
 @media screen and (max-width: 480px) {
+    .loader {
+        left: 38%;
+    }
+
     .nav-item {
         display: none;
     }
+
     .mobile-nav {
         width: 94%;
         position: absolute;
         z-index: 1;
         background: rgba(0, 0, 0, 0.7);
     }
+
     .nav-link:hover {
         color: wheat !important;
     }
+
     #my-pic {
         text-align: center;
     }
+
+    #my-pic img {
+        width: 100%;
+    }
+
     #landing-page .col-sm-12 {
         position: relative;
     }
+
     .mobile-nav-button {
         display: block;
     }
+
     .my-intro {
         margin: 2em 0;
         text-align: center;
     }
+
     .my-intro h2 {
         font-size: 38px;
     }
+
     .right-section h5 {
         text-align: center;
     }
+
     .right-section .role {
         text-align: center;
         font-size: 18px;
     }
-    table.about-details {
-        width: 80%;
-        margin: auto;
-        margin-bottom: 40px;
-        font-size: 15px;
-        font-weight: 100;
-    }
+
     table.about-details tr {
         box-shadow: 0px 0px 10px aquamarine;
     }
+
     table.about-details tr td {
         border: 1px solid;
     }
+
     p.about-para {
         padding: 0 20px;
     }
+
     .map-address {
         width: 95%;
         margin: auto;
     }
+
     .mydetails h4 {
         font-size: 30px;
     }
+
     .exp-right-section h4 {
         font-size: 22px;
     }
+
     .edu-right-section h4 {
         font-size: 22px;
     }
+
     .edu-left-section h2 {
         font-size: 22px;
     }
+
     .mydetails .left-section {
         margin: 32px 0;
     }
+
     .nav-link:hover {
         color: rgba(3, 26, 51, 0.726);
     }
+
     .exp-left-section {
         width: 25%;
         margin-left: 2%;
     }
+
     .working-year {
         padding: 20px 1px;
     }
+
     .edu-left-section {
         width: 25%;
         margin-left: 2%;
     }
+
     .mydetails .right-section {
         width: 94%;
         margin: auto;
     }
+
     .map-address {
         width: 95%;
         margin: auto;
     }
+
     .mydetails h4 {
         font-size: 30px;
     }
+
     .exp-right-section h4 {
         font-size: 22px;
     }
+
     .edu-right-section h4 {
         font-size: 22px;
     }
+
     .edu-left-section h2 {
         font-size: 22px;
     }
+
     .mydetails .left-section {
         margin: 32px 0;
     }
+
     .nav-link:hover {
         color: rgba(3, 26, 51, 0.726);
     }
 }
 
 @media screen and (max-width: 360px) {
-    
+
     .nav {
         display: none !important;
     }
+
     .mobile-nav {
         width: 94%;
         position: absolute;
         z-index: 1;
         background: rgba(0, 0, 0, 0.7);
     }
+
     #landing-page .col-sm-12 {
         position: relative;
     }
+
     .mobile-nav-button {
         display: block;
     }
+
     .loader {
         margin-top: 50%;
         left: 35%;
     }
+
     #my-pic {
         text-align: center;
     }
+
     #my-pic img {
-        height: 93.5vh;        
+        height: 93.5vh;
         width: 100%;
     }
+
     .my-intro {
         margin: 2em 0;
         text-align: center;
     }
+
     .my-intro h2 {
         font-size: 38px;
     }
+
     .right-section h5 {
         text-align: center;
     }
+
     .right-section .role {
         text-align: center;
         font-size: 18px;
     }
+
     table.about-details {
         width: 80%;
         margin: auto;
@@ -871,44 +982,57 @@ p.about-para {
         font-size: 15px;
         font-weight: 100;
     }
+
     table.about-details tr {
         box-shadow: 0px 0px 10px aquamarine;
     }
+
     table.about-details tr td {
         border: 1px solid;
     }
+
     p.about-para {
         padding: 0 20px;
     }
+
     .mydetails .right-section {
         width: 94%;
         margin: auto;
     }
+
     .map-address {
         width: 95%;
         margin: auto;
     }
+
     .mydetails h4 {
         font-size: 30px;
     }
+
     .exp-right-section h4 {
         font-size: 22px;
     }
+
     .edu-right-section h4 {
         font-size: 22px;
     }
+
     .edu-left-section h2 {
         font-size: 22px;
     }
+
     .mydetails .left-section {
         margin: 32px 0;
     }
+
     .nav-link:hover {
         color: rgba(3, 26, 51, 0.726);
     }
+
     .eduexp {
         margin-left: 0%;
     }
+
     .col-sm-8 {
         flex: 0 0 100%;
         max-width: 100%;
