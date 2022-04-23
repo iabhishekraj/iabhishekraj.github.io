@@ -4,12 +4,7 @@ Web Resume of Abhishek Raj
 
 
 ## click on the below link to see my resume
-https://codingbyraj.github.io
-or
-http://iabhishekraj.github.io
-
-
-
+https://iabhishekraj.in
 
 ## Technology Used:
 HTML
